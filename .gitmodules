@@ -7,3 +7,6 @@
 [submodule "bessyii/bact-archiver-local"]
 	path = site_specific/bessyii/archiver
 	url = git@github.com:hz-b/bact-archiver-local
+[submodule "site_specific/mls/bact-archiver-local"]
+	path = site_specific/mls/archiver
+	url = git@github.com:hz-b/bact-archiver-local
