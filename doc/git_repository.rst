@@ -13,7 +13,7 @@ with (e.g. for bact-archiver-local)
 
 .. code:: shell
 
-   git submodule add git:github.com/bact-archiver-local
+   git submodule add git@github.com:hz-bbact-archiver-local
 
 
 The initialise the module with
@@ -29,3 +29,6 @@ repository add it too) with
 .. code:: shell
 
    git commit -a -m "Added bact-archiver-local as submodule"
+
+
+.. code :: shell
