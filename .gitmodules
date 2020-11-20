@@ -1,0 +1,3 @@
+[submodule "bact-archiver"]
+	path = bact-archiver
+	url = git@github.com:hz-b/bact-archiver
