@@ -5,5 +5,5 @@
 	path = general/bact-archiver-local
 	url = git@github.com:hz-b/bact-archiver-local
 [submodule "bessyii/bact-archiver-local"]
-	path = bessyii/archiver
+	path = site_specific/bessyii/archiver
 	url = git@github.com:hz-b/bact-archiver-local
