@@ -36,7 +36,6 @@ def _run_command(args):
 
 
 def run_command(t_dir):
-
     args = args_std + [t_dir]
 
     print('\nExecuting command {}'.format(' '.join(args)))
@@ -49,7 +48,10 @@ def run_command(t_dir):
 
 
 def main():
+    '''traverse directories executing install for appropriate ones
 
+    for each where a setup.py is found
+    '''
     package_dirs = [
         tup[0] for tup in os.walk(os.getcwd()) if "setup.py" in tup[-1]
     ]
