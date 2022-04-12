@@ -13,3 +13,12 @@
 [submodule "site_specific/bpro/bact-archiver-bpro"]
 	path = site_specific/bpro/archiver
 	url = git@github.com:hz-b/bact-archiver-bpro
+[submodule "general/bact-math-utils"]
+	path = general/bact-math-utils
+	url = https://github.com/hz-b/bact-math-utils.git
+[submodule "general/bact-analysis"]
+	path = general/bact-analysis
+	url = https://github.com/hz-b/bact-analysis.git
+[submodule "site_specific/bessyii/bact-analysis-bessyii"]
+	path = site_specific/bessyii/bact-analysis-bessyii
+	url = https://github.com/hz-b/bact-analysis-bessyii.git
