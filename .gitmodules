@@ -22,3 +22,12 @@
 [submodule "site_specific/bessyii/bact-analysis-bessyii"]
 	path = site_specific/bessyii/bact-analysis-bessyii
 	url = https://github.com/hz-b/bact-analysis-bessyii.git
+[submodule "site_specific/mls/bact-bessyii-mls-ophyd"]
+	path = site_specific/bact-bessyii-mls-ophyd
+	url = https://github.com/hz-b/bact-bessyii-mls-ophyd.git
+[submodule "site_specific/mls/bact-mls-ophyd"]
+	path = site_specific/mls/bact-mls-ophyd
+	url = https://github.com/hz-b/bact-mls-ophyd.git
+[submodule "site_specific/mls/bact-mls-bluesky"]
+	path = site_specific/mls/bact-mls-bluesky
+	url = https://github.com/hz-b/bact-mls-bluesky.git
