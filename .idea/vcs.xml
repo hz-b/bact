@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/general/bact-analysis" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/general/bact-archiver" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/general/bact-archiver-local" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/general/bact-math-utils" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/site_specific/bact-bessyii-mls-ophyd" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/site_specific/bessyii/archiver" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/site_specific/bessyii/bact-analysis-bessyii" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/site_specific/bpro/archiver" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/site_specific/mls/archiver" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/site_specific/mls/bact-mls-bluesky" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/site_specific/mls/bact-mls-ophyd" vcs="Git" />
+  </component>
+</project>
