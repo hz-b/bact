@@ -1,33 +1,33 @@
 [submodule "bact-archiver"]
-	path = general/bact-archiver
+	path = core/archiver
 	url = git@github.com:hz-b/bact-archiver
 [submodule "general/bact-archiver-local"]
-	path = general/bact-archiver-local
+	path = core/archiver-local
 	url = git@github.com:hz-b/bact-archiver-local
 [submodule "bessyii/bact-archiver-local"]
-	path = site_specific/bessyii/archiver
+	path = custom/bessyii/archiver
 	url = git@github.com:hz-b/bact-archiver-local
 [submodule "site_specific/mls/bact-archiver-local"]
-	path = site_specific/mls/archiver
+	path = custom/mls/archiver
 	url = git@github.com:hz-b/bact-archiver-local
 [submodule "site_specific/bpro/bact-archiver-bpro"]
-	path = site_specific/bpro/archiver
+	path = custom/bpro/archiver
 	url = git@github.com:hz-b/bact-archiver-bpro
 [submodule "general/bact-math-utils"]
-	path = general/bact-math-utils
+	path = core/math-utils
 	url = https://github.com/hz-b/bact-math-utils.git
 [submodule "general/bact-analysis"]
-	path = general/bact-analysis
+	path = core/analysis
 	url = https://github.com/hz-b/bact-analysis.git
 [submodule "site_specific/bessyii/bact-analysis-bessyii"]
-	path = site_specific/bessyii/bact-analysis-bessyii
+	path = custom/bessyii/analysis
 	url = https://github.com/hz-b/bact-analysis-bessyii.git
 [submodule "site_specific/mls/bact-bessyii-mls-ophyd"]
-	path = site_specific/bact-bessyii-mls-ophyd
+	path = custom/bact-bessyii-mls-ophyd
 	url = https://github.com/hz-b/bact-bessyii-mls-ophyd.git
 [submodule "site_specific/mls/bact-mls-ophyd"]
-	path = site_specific/mls/bact-mls-ophyd
+	path = custom/mls/ophyd
 	url = https://github.com/hz-b/bact-mls-ophyd.git
 [submodule "site_specific/mls/bact-mls-bluesky"]
-	path = site_specific/mls/bact-mls-bluesky
+	path = custom/mls/bluesky
 	url = https://github.com/hz-b/bact-mls-bluesky.git
