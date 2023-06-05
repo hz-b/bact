@@ -34,3 +34,9 @@
 [submodule "custom/lat2db"]
 	path = custom/lat2db
 	url = https://gitlab.helmholtz-berlin.de/acc-tools/lat2db.git
+[submodule "custom/bessyii/bluesky"]
+	path = custom/bessyii/bluesky
+	url = https://github.com/hz-b/bact-bessyii-bluesky.git
+[submodule "custom/bessyii/ophyd"]
+	path = custom/bessyii/ophyd
+	url = https://github.com/hz-b/bact-bessyii-ophyd.git
