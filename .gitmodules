@@ -33,7 +33,7 @@
 	url = https://github.com/hz-b/bact-mls-bluesky.git
 [submodule "custom/lat2db"]
 	path = custom/lat2db
-	url = https://gitlab.helmholtz-berlin.de/acc-tools/lat2db.git
+	url = https://github.com/hz-b/lat2db.git
 [submodule "custom/bessyii/bluesky"]
 	path = custom/bessyii/bluesky
 	url = https://github.com/hz-b/bact-bessyii-bluesky.git
