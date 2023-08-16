@@ -40,3 +40,6 @@
 [submodule "custom/bessyii/ophyd"]
 	path = custom/bessyii/ophyd
 	url = https://github.com/hz-b/bact-bessyii-ophyd.git
+[submodule "custom/bessy/bessyii-dashboard"]
+	path = custom/bessy/bessyii-dashboard
+	url = https://github.com/hz-b/bessyii-dashboard.git
