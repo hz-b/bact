@@ -31,9 +31,6 @@
 [submodule "site_specific/mls/bact-mls-bluesky"]
 	path = custom/mls/bluesky
 	url = https://github.com/hz-b/bact-mls-bluesky.git
-[submodule "custom/lat2db"]
-	path = custom/lat2db
-	url = https://github.com/hz-b/lat2db.git
 [submodule "custom/bessyii/bluesky"]
 	path = custom/bessyii/bluesky
 	url = https://github.com/hz-b/bact-bessyii-bluesky.git
