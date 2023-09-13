@@ -1,18 +1,18 @@
 [submodule "bact-archiver"]
 	path = core/archiver
-	url = https://github.com:hz-b/bact-archiver
+	url = https://github.com/hz-b/bact-archiver
 [submodule "general/bact-archiver-local"]
 	path = core/archiver-local
-	url = https://github.com:hz-b/bact-archiver-local
+	url = https://github.com/hz-b/bact-archiver-local
 [submodule "bessyii/bact-archiver-local"]
 	path = custom/bessyii/archiver
-	url = https://github.com:hz-b/bact-archiver-local
+	url = https://github.com/hz-b/bact-archiver-local
 [submodule "site_specific/mls/bact-archiver-local"]
 	path = custom/mls/archiver
-	url = https://github.com:hz-b/bact-archiver-local
+	url = https://github.com/hz-b/bact-archiver-local
 [submodule "site_specific/bpro/bact-archiver-bpro"]
 	path = custom/bpro/archiver
-	url = https://github.com:hz-b/bact-archiver-bpro
+	url = https://github.com/hz-b/bact-archiver-bpro
 [submodule "general/bact-math-utils"]
 	path = core/math-utils
 	url = https://github.com/hz-b/bact-math-utils.git
