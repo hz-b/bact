@@ -1,5 +1,7 @@
 # PyCharm 
 .idea/
+.idea/bact.iml
+.idea/vcs.xml
 
 # Emacs auto-backup files
 *~
