@@ -1,19 +1,25 @@
-[submodule "general/bact-math-utils"]
+[submodule "core/math-utils"]
 	path = core/math-utils
 	url = https://github.com/hz-b/bact-math-utils.git
-[submodule "general/bact-analysis"]
+[submodule "core/analysis"]
 	path = core/analysis
 	url = https://github.com/hz-b/bact-analysis.git
-[submodule "site_specific/bessyii/bact-analysis-bessyii"]
+[submodule "core/archiver/"]
+	path = core/archiver/
+	url = https://github.com/hz-b/bact-archiver.git
+[submodule "core/archiver-local/"]
+	path = core/archiver-local/
+	url = https://github.com/hz-b/bact-archiver-local.git
+[submodule "custom/bessyii/analysis"]
 	path = custom/bessyii/analysis
 	url = https://github.com/hz-b/bact-analysis-bessyii.git
-[submodule "site_specific/mls/bact-bessyii-mls-ophyd"]
+[submodule "custom/bact-bessyii-mls-ophyd"]
 	path = custom/bact-bessyii-mls-ophyd
 	url = https://github.com/hz-b/bact-bessyii-mls-ophyd.git
-[submodule "site_specific/mls/bact-mls-ophyd"]
+[submodule "custom/mls/bact-mls-ophyd"]
 	path = custom/mls/ophyd
 	url = https://github.com/hz-b/bact-mls-ophyd.git
-[submodule "site_specific/mls/bact-mls-bluesky"]
+[submodule "custom/mls/bact-mls-bluesky"]
 	path = custom/mls/bluesky
 	url = https://github.com/hz-b/bact-mls-bluesky.git
 [submodule "custom/lat2db"]
@@ -25,25 +31,15 @@
 [submodule "custom/bessyii/ophyd"]
 	path = custom/bessyii/ophyd
 	url = https://github.com/hz-b/bact-bessyii-ophyd.git
-[submodule "custom/bessy/bessyii-dashboard"]
-	path = custom/bessy/bessyii-dashboard
-	url = https://github.com/hz-b/bessyii-dashboard.git
 [submodule "custom/bessyii/bessyii-dashboard"]
-	path = custom/bessyii/bessyii-dashboard
+	path = custom/bessyii/dashboard
 	url = https://github.com/hz-b/bessyii-dashboard.git
 [submodule "custom/bessyii/archiver/"]
 	path = custom/bessyii/archiver/
 	url = https://github.com/hz-b/bact-archiver-bessyii.git
 [submodule "custom/bpro/archiver/"]
 	path = custom/bpro/archiver/
-	path = custom/bpro/archiver/
 	url = https://github.com/hz-b/bact-archiver-bpro.git
 [submodule "custom/mls/archiver/"]
 	path = custom/mls/archiver/
 	url = https://github.com/hz-b/bact-mls-archiver.git
-[submodule "core/archiver/"]
-	path = core/archiver/
-	url = https://github.com/hz-b/bact-archiver.git
-[submodule "core/archiver-local/"]
-	path = core/archiver-local/
-	url = https://github.com/hz-b/bact-archiver-local.git
