@@ -32,12 +32,18 @@
 	path = custom/bessyii/bessyii-dashboard
 	url = https://github.com/hz-b/bessyii-dashboard.git
 [submodule "custom/bessyii/archiver/"]
+	path = custom/bessyii/archiver/
 	url = https://github.com/hz-b/bact-archiver-bessyii.git
 [submodule "custom/bpro/archiver/"]
+	path = custom/bpro/archiver/
+	path = custom/bpro/archiver/
 	url = https://github.com/hz-b/bact-archiver-bpro.git
 [submodule "custom/mls/archiver/"]
+	path = custom/mls/archiver/
 	url = https://github.com/hz-b/bact-mls-archiver.git
 [submodule "core/archiver/"]
+	path = core/archiver/
 	url = https://github.com/hz-b/bact-archiver.git
 [submodule "core/archiver-local/"]
+	path = core/archiver-local/
 	url = https://github.com/hz-b/bact-archiver-local.git
