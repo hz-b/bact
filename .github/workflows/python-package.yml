@@ -35,6 +35,23 @@ jobs:
         python -m pip install --upgrade pip
         python -m pip install flake8 pytest
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+
+        # deliberatly not installing core/archiver 
+        # needs some extra steps. should be loaded from pypi
+        # mls bluesky not yet a package
+        for tdir in core/math-utils core/analysis                                       \
+                    custom/bact-bessyii-mls-ophyd                                       \
+                    custom/bessyii/archiver custom/mls/ophyd                            \
+                    custom/bessyii/archiver custom/bessyii/ophyd custom/bessyii/bluesky \
+                    custom/bessyii/analysis custom/bessyii/bessyii-dashboard            \
+                    custom/bpro/archiver
+        do
+            pushd $tdir
+            if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+            pip3 install .
+            popd
+        done
+        
     - name: Lint with flake8
       run: |
         # stop the build if there are Python syntax errors or undefined names
