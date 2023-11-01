@@ -1,18 +1,3 @@
-[submodule "bact-archiver"]
-	path = core/archiver
-	url = git@github.com/hz-b/bact-archiver
-[submodule "general/bact-archiver-local"]
-	path = core/archiver-local
-	url = git@github.com/hz-b/bact-archiver-local
-[submodule "bessyii/bact-archiver-local"]
-	path = custom/bessyii/archiver
-	url = git@github.com/hz-b/bact-archiver-local
-[submodule "site_specific/mls/bact-archiver-local"]
-	path = custom/mls/archiver
-	url = git@github.com/hz-b/bact-archiver-local
-[submodule "site_specific/bpro/bact-archiver-bpro"]
-	path = custom/bpro/archiver
-	url = git@github.com/hz-b/bact-archiver-bpro
 [submodule "general/bact-math-utils"]
 	path = core/math-utils
 	url = https://github.com/hz-b/bact-math-utils.git
@@ -46,3 +31,13 @@
 [submodule "custom/bessyii/bessyii-dashboard"]
 	path = custom/bessyii/bessyii-dashboard
 	url = https://github.com/hz-b/bessyii-dashboard.git
+[submodule "custom/bessyii/archiver/"]
+	url = https://github.com/hz-b/bact-archiver-bessyii.git
+[submodule "custom/bpro/archiver/"]
+	url = https://github.com/hz-b/bact-archiver-bpro.git
+[submodule "custom/mls/archiver/"]
+	url = https://github.com/hz-b/bact-mls-archiver.git
+[submodule "core/archiver/"]
+	url = https://github.com/hz-b/bact-archiver.git
+[submodule "core/archiver-local/"]
+	url = https://github.com/hz-b/bact-archiver-local.git
