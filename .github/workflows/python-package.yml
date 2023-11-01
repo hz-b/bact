@@ -35,8 +35,10 @@ jobs:
         python -m pip install --upgrade pip
         python -m pip install flake8 pytest
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
-        
-        for tdir in core/math-utils core/analysis core/archiver                         \
+
+        # deliberatly not installing core/archiver 
+        # needs some extra steps. should be loaded from pypi
+        for tdir in core/math-utils core/analysis                         \
                     custom/bact-bessyii-mls-ophyd                                       \
                     custom/bessyii/archiver custom/mls/ophyd custom/mls/bluesky         \
                     custom/bessyii/archiver custom/bessyii/ophyd custom/bessyii/bluesky \
