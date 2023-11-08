@@ -1,64 +1,34 @@
-'''Simple script executing development install for packages in sub directories
-'''
-
 import os
 import subprocess
+import glob
 
-#: to be on the save side ... ymmv
-pip = 'pip3'
+def find_package_dirs():
+    '''Find directories containing setup.py or pyproject.toml files'''
+    setup_files = glob.glob("**/setup.py", recursive=True)
+    pyproject_files = glob.glob("**/pyproject.toml", recursive=True)
+    package_dirs = set()
 
-#: pip and its the development install commands
-args_std = [
-    # '/bin/echo',
-    pip, 'install', '-e',
-]
+    for file_path in setup_files:
+        package_dirs.add(os.path.dirname(file_path))
 
+    for file_path in pyproject_files:
+        package_dirs.add(os.path.dirname(file_path))
 
-def _run_command(args):
-    PIPE = subprocess.PIPE
-    with subprocess.Popen(args=args, stdout=PIPE, stderr=PIPE) as proc:
-        while not proc.returncode:
-            output = errs = None
-            try:
-                output, errs = proc.communicate(timeout=1)
-            except subprocess.TimeoutExpired:
-                pass
-            except ValueError:
-                # No more reads
-                return
-            if errs:
-                print('Got errors {}'.format(errs))
-                return
+    return list(package_dirs)
 
-            if output:
-                output = output.decode()
-                print(output)
-
-
-def run_command(t_dir):
-    args = args_std + [t_dir]
-
-    print('\nExecuting command {}'.format(' '.join(args)))
+def run_command(directory):
+    '''Run the install command in the specified directory'''
     try:
-        _run_command(args)
-    except Exception as exc:
-        print('Failed with exception {} type {}'.format(exc, repr(exc)))
-    else:
-        print('Finished\n')
-
+        subprocess.run(["pip3", "install", "-e", directory], check=True)
+    except subprocess.CalledProcessError as e:
+        print(f"Error occurred while installing package in {directory}: {e}")
 
 def main():
-    '''traverse directories executing install for appropriate ones
-
-    for each where a setup.py is found
-    '''
-    package_dirs = [
-        tup[0] for tup in os.walk(os.getcwd()) if "setup.py" in tup[-1]
-    ]
+    '''Traverse directories executing install for appropriate ones'''
+    package_dirs = find_package_dirs()
 
     for t_dir in package_dirs:
         run_command(t_dir)
 
-
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()
