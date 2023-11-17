@@ -43,3 +43,6 @@
 [submodule "custom/mls/archiver"]
 	path = custom/mls/archiver
 	url = https://github.com/hz-b/bact-mls-archiver.git
+[submodule "core/device-models"]
+	path = core/device-models
+	url = https://github.com/hz-b/bact-device-models.git
