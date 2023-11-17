@@ -39,7 +39,7 @@ jobs:
         # deliberatly not installing core/archiver 
         # needs some extra steps. should be loaded from pypi
         # mls bluesky not yet a package
-        for tdir in core/math-utils core/analysis                              \
+        for tdir in core/math-utils core/device-models core/analysis           \
                     custom/bact-bessyii-mls-ophyd                              \
                     custom/mls/ophyd                                           \
                     custom/bessyii/ophyd custom/bessyii/bluesky                \
