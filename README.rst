@@ -62,6 +62,18 @@ Now you should have an active virtual environment. Run
 should install all required packages in your virtual environment.
 
 
+Running orbit response matrix example
+-------------------------------------
+
+If you have the package https://github.com/hz-b/dt4acc installed you
+can run it using
+
+.. code-block:: shell
+
+    python3 custom/bessyii/bluesky/scripts/measure_steerer_response.py --full-run
+
+
+
 
 
 
