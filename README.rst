@@ -57,9 +57,11 @@ Now you should have an active virtual environment. Run
 
 .. code-block:: shell
 
-   python3 development_install.py
+   python -m pip install `python list_package_names.py | grep -v archiver`
 
-should install all required packages in your virtual environment.
+should install all required packages in your virtual environment. Please note this
+will not install the archiver module, as it requires some prerequisites for building
+its core. Please have a look to the directory `archiver/core` how to install it.
 
 
 Running orbit response matrix example
