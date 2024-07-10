@@ -23,7 +23,6 @@ def find_package_dirs(t_dir: str):
 def main():
     """Traverse directories listing the suitable ones"""
     package_dirs = list(find_package_dirs("core/")) + list(find_package_dirs("custom/"))
-
     print("\n".join([f"{t_dir}/" for t_dir in package_dirs]))
 
 
