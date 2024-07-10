@@ -30,27 +30,13 @@ jobs:
         cache-dependency-path: |
            **/setup.cfg
            **/requirements*.txt
-    - name: Install dependencies
+    - name: Install dependencies and packages
       run: |
-        python -m pip install --upgrade pip
+        python -m pip install --upgrade pip wheel setuptools
         python -m pip install flake8 pytest
-        if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+    
+        python -m pip install `python list_package_names.py`    
 
-        # deliberatly not installing core/archiver 
-        # needs some extra steps. should be loaded from pypi
-        # mls bluesky not yet a package
-        for tdir in core/math-utils core/device-models core/analysis           \
-                    custom/bact-bessyii-mls-ophyd                              \
-                    custom/mls/ophyd                                           \
-                    custom/bessyii/ophyd custom/bessyii/bluesky                \
-                    custom/bessyii/analysis custom/bessyii/bessyii-dashboard                       
-        do
-            pushd $tdir
-            if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
-            pip3 install .
-            popd
-        done
-        
     - name: Lint with flake8
       run: |
         # stop the build if there are Python syntax errors or undefined names
