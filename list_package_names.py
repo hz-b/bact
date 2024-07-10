@@ -20,34 +20,11 @@ def find_package_dirs(t_dir: str):
     return list(package_dirs)
 
 
-def build_wheel(directory, wheel_directory):
-    subprocess.run(["pip3", "wheel", "-v", "-w", wheel_directory, directory], check=True)
-
-
-def run_command(directory):
-    "Run the installation command in the specified directory"
-    requirements = os.path.join(directory, "requirements.txt")
-    has_requirements = False
-    try:
-        os.stat(requirements)
-        has_requirements = True
-    except FileNotFoundError:
-        pass
-
-    if has_requirements:
-        try:
-            subprocess.run(["pip3", "install", "-r", requirements], check=True)
-
-        except subprocess.CalledProcessError as e:
-            print(f"Error occurred while installing package requirements {requirements}: {e}")
-
-    try:
-        subprocess.run(["pip3", "install", "-e", directory], check=True)
-    except subprocess.CalledProcessError as e:
-        print(f"Error occurred while installing package in {directory}: {e}")
-
-
 class PackageKey:
+    """Priorise base packages
+
+    Hand coded what dependencies we have along the line
+    """
     def __init__(self):
         self.counter = count()
         self.core_custom_values = dict(core=1000, custom=5000)
@@ -81,15 +58,10 @@ class PackageKey:
 def main():
     """Traverse directories executing install for appropriate ones"""
     package_dirs = list(find_package_dirs("core/") + find_package_dirs("custom/"))
-    package_dirs.sort(key=PackageKey())
+    package_dirs.sort()
+    # package_dirs.sort(key=PackageKey())
 
-    print(package_dirs)
-    # for t_dir in package_dirs:
-    #    print(t_dir)
-    #    build_wheel(t_dir, "wheels/")
-
-    for t_dir in package_dirs:
-        run_command(t_dir)
+    print(" ".join([f"{t_dir}/" for t_dir in package_dirs]))
 
 
 if __name__ == "__main__":
