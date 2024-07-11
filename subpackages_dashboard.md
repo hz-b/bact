@@ -6,7 +6,7 @@
 | [math utils](https://github.com/hz-b/bact-math-utils/) | [![CI](https://github.com/hz-b/bact-math-utils/actions/workflows/python-package.yml/badge.svg)](https://github.com/hz-b/bact-math-utils/actions/workflows/python-package.yml) |
 | [device models](https://github.com/hz-b/bact-device-models/) | [![CI](https://github.com/hz-b/bact-device-models/actions/workflows/python-package.yml/badge.svg)](https://github.com/hz-b/bact-device-models/actions/workflows/python-package.yml) |
 | [analysis](https://github.com/hz-b/bact-analysis/) | [![CI](https://github.com/hz-b/bact-analysis/actions/workflows/python-package.yml/badge.svg)](https://github.com/hz-b/bact-analysis/actions/workflows/python-package.yml) | 
-| [archiver] (https://github.com/hz-b/bact-archiver/) | [![CI](https://github.com/hz-b/bact-archiver/actions/workflows/python-package.yml/badge.svg)](https://github.com/hz-b/bact-archiver/actions/workflows/python-package.yml) | 
+| [archiver](https://github.com/hz-b/bact-archiver/) | [![CI](https://github.com/hz-b/bact-archiver/actions/workflows/python-package.yml/badge.svg)](https://github.com/hz-b/bact-archiver/actions/workflows/python-package.yml) | 
 | **custom**  | |
 | **common for BESSY II and MLS** | |
 | [ophyd](https://github.com/hz-b/bact-bessyii-mls-ophyd/) | [![CI](https://github.com/hz-b/bact-bessyii-mls-ophyd/actions/workflows/python-package.yml/badge.svg)](https://github.com/hz-b/bact-bessyii-mls-ophyd/actions/workflows/python-package.yml) |
