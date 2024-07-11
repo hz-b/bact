@@ -3,6 +3,12 @@ BACT: Berlin Accelerator Control Toolkit
 
 Publishing code soon. stay tuned.
 
+
+HAve a look to the status page of the `subpackages dashboard`_
+_`subpackages dashboard` : subpackages_dashboard.md
+
+
+
 Following other package belong to this toolkit
 ----------------------------------------------
 
