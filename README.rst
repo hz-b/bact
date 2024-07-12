@@ -24,7 +24,7 @@ In an empty directory issue the command
 
 .. code-block:: shell
 
-     git clone https://github.com/hz-b/bact.git -b dev/feature/orbit-response-measurement bact
+     git clone https://github.com/hz-b/bact.git 
 
 
 then change into `bact`. In this directory issue
